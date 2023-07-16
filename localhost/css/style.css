@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(/image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 750px;
+    padding: 80px 60px 100px;
+    background: rgba(26, 25, 25, 0.3);
+    backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.data_block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 35px;
+    margin-top: 55px;
+}
+
+input{
+    background: transparent;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-left: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+input::placeholder{
+    font-size: 24px;
+    color: gray;
+}
+
+input:focus::placeholder{
+    color: darkslategray;
+}
+
+input:focus{
+    outline: none;
+}
+
+.name{
+    width: 100%;
+}
+
+.email{
+    width: 290px;
+}
+
+.phone{
+    width: 290px;
+}
+
+.text_area{
+    margin-top: 65px;
+    border: 1px solid #fff;
+    border-radius: 13px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    font-size: 24px;
+    color:gray;
+}
+
+textarea{
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color:#fff;
+
+}
+
+textarea:focus::placeholder{
+    color: darkslategray;
+}
+
+textarea:focus{
+    outline:none;
+}
+
+.send{
+    width: 100%;
+    text-align: right;
+}
+
+button{
+    padding: 15px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: aqua;
+    border-radius: 5px;
+    border: 1px solid aqua;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+}
+
+button:hover{
+    background: #0000008a;
+}
+
+button:active{
+    transform: translateY(2px);
+}
+
+.send-button[style="display:none"] {
+    display: none;
+}
