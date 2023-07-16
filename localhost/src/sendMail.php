@@ -3,10 +3,10 @@ require_once 'db.php';
 // require_once 'checkMail.php';
 
 //считываем данные формы
-$name = trim($_POST['name']);
-$phone = trim($_POST['phone']);
-$email = trim($_POST['email']); 
-$message = trim($_POST['message']); 
+$name = htmlspecialchars(trim($_POST['name']));
+$phone = htmlspecialchars(trim($_POST['phone']));
+$email = htmlspecialchars(trim($_POST['email'])); 
+$message = htmlspecialchars(trim($_POST['message']));
 
 //проверяем наличие email в базе
 
