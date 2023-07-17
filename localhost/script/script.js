@@ -1,6 +1,6 @@
 function sendEmailOnCheck() {
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'checkMail.php');
+    xhr.open('POST', '/src/checkMail.php');
     xhr.responseType = 'json';
     xhr.onload = () => {
         if (xhr.status !== 200) {
@@ -36,7 +36,7 @@ function sendEmailOnCheck() {
 
 function emailOnSend() {
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'sendMail.php');
+    xhr.open('POST', '/src/sendMail.php');
     xhr.responseType = 'json';
     xhr.onload = () => {
         if (xhr.status !== 200) {
